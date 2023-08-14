@@ -21,6 +21,7 @@ airport_details = fr_api.get_airport_details(airport.icao)
 details = airport_details['airport']['pluginData']['details']
 position = airport_details['airport']['pluginData']['details']['position']
 airportImages = airport_details['airport']['pluginData']['details']['airportImages']
+#step1:
 
 name=details['name']
 country=position['country']['name']
@@ -30,12 +31,11 @@ print("{} in: {} / {}".format(name, city, country))
 
 
 
-'''
+
 Step2:
-latitude = ...
-longitude = ...
-elevation = ...
-'''
+latitude =position['latitude']
+longitude =position['longitude']
+elevation =position['elevation']
 
 '''
 Step3:
