@@ -32,7 +32,7 @@ print("{} in: {} / {}".format(name, city, country))
 
 
 
-Step2:
+#Step2:
 latitude =position['latitude']
 longitude =position['longitude']
 elevation =position['elevation']
